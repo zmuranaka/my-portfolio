@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!--
+        File: index.html
+        Zachary Muranaka
+        Homepage for my portfolio
+     -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Zachary Muranaka Portfolio</title>
+    <link href="styles/portfolio_styles.css" rel="stylesheet">
+    <script src="scripts/dynamicStyles.js" async></script>
+    <script src="scripts/scroll.js" defer></script>
+    <script src="scripts/descriptions.js" defer></script>
+</head>
+
+<body>
+
+    <div id="landingPage" class="page">
+        <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
+        <div id="mobileTopRow">
+            <img src="images/whiteBurgerNav.png" alt="Menu" id="burgerNav">
+        </div>
+        <nav id="navBar">
+            <div class="navLink">YouTube Validator</div>
+            <div class="navLink">Rock Paper Scissors</div>
+            <div class="navLink">Hypergeometric Calculator</div>
+            <div class="navLink">Liar's Dice</div>
+            <div class="navLink">Contact Me</div>
+        </nav>
+        <p>Zachary Muranaka</p>
+        <span>A showcase of my projects and abilities</span>
+        <a href="mailto:zacharymuranaka@mail.weber.edu"><img src="images/mailLogo.png" alt="Mail" class="mailLogo"/></a>
+        <a href="https://github.com/zmuranaka" target="_blank"><img src="images/githubLogo.png" alt="GitHub"/></a>
+        <a href="https://weber.joinhandshake.com/users/7194928?ref=students" target="_blank"><img src="images/handshakeLogo.jpg" alt="Handshake"/></a>
+    </div>
+
+    <section class="page">
+        <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
+        <h2>YouTube Validator</h2>
+        <p class="description">
+            Fully-responsive web application that validates YouTube URLs.
+            Utilizes random character generation from ASCII,
+            Document Object Model traversal, and generating images with an external source.
+        </p>
+        <div>
+            <video poster="images/validator.png" class="tallVideo" controls muted>
+                <source src="videos/validator.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <a href="http://icarus.cs.weber.edu/~zm83483/youtube/validator.html" target="_blank" class="button">View Live</a>
+            <a href="https://github.com/zmuranaka/youtube-validator" target="_blank" class="button">View Code</a>
+        </div>
+    </section>
+
+    <section class="page">
+        <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
+        <h2>Rock Paper Scissors</h2>
+        <p class="description">
+            Fully-responsive web application that allows the user to play rock-paper-scissors and two variations.
+            Utilizes parsing custom user input as integers, time outs for time tracking,
+            and local storage to allow for a fully-functional high scores board.
+        </p>
+        <div>
+            <video poster="images/rps.png" class="tallVideo" controls muted>
+                <source src="videos/rps.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <a href="http://icarus.cs.weber.edu/~zm83483/rps/rps_classic.html" target="_blank" class="button">View Live</a>
+            <a href="https://github.com/zmuranaka/rps" target="_blank" class="button">View Code</a>
+        </div>
+    </section>
+
+    <section class="page">
+        <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
+        <h2>Hypergeometric Calculator</h2>
+        <p class="description">
+            Fully-responsive web application that solves hypergeometric distributions.
+            Utilizes error handling, complex math, and ES6 functionality like classes.
+        </p>
+        <div>
+            <video poster="images/hypergeom.png" class="tallVideo" controls muted>
+                <source src="videos/hypergeom.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <a href="http://icarus.cs.weber.edu/~zm83483/hypergeom/hypergeom.html" target="_blank" class="button">View Live</a>
+            <a href="https://github.com/zmuranaka/hypergeometric-calculator-js" target="_blank" class="button">View Code</a>
+        </div>
+    </section>
+
+    <section class="page">
+        <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
+        <h2>Liar's Dice</h2>
+        <p class="description">
+            Java application that allows the user to play Liar's Dice against three computer-controlled bots.
+            Utilizes complex turn-based gameplay, Object-Oriented Programming fundamentals,
+            and Java Swing for a fully-featured Graphical User Interface.
+        </p>
+        <div>
+            <video poster="images/liarsDice.png" class="wideVideo" controls muted>
+                <source src="videos/liarsDice.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <a href="https://github.com/zmuranaka/liars-dice" target="_blank" class="button">View Code</a>
+        </div>
+    </section>
+
+    <section class="page">
+        <img src="images/blackUpArrow.png" class="upArrow" alt="Back to Top"/>
+        <h2>Contact Me</h2>
+        <span>
+            Use this form to send me an email and I'll get back to you as soon as possible.
+        </span>
+        <form method="post" action="scripts/sendEmail.php">
+            <div class="formRow">
+                <label for="username">Name</label>
+                <input name="name" type="text" id="username" placeholder="Your name" required>
+            </div>
+            <div class="formRow">
+                <label for="usermail">Email</label>
+                <input name="mail" type="text" id="usermail" placeholder="Your email" required>
+            </div>
+            <div class="formRow">
+                <label for="emailsubject">Subject</label>
+                <input name="subject" type="text" id="emailsubject" placeholder="Subject of email" required>
+            </div>
+            <textarea name="message" placeholder="Type your message here" rows="8" required></textarea>
+            <input type="submit" name="submit" id="sendBtn" value="Send">
+        </form>
+    </section>
+
+    <footer>
+        <div>
+            &#9400; 2020 Zachary Muranaka
+            <br>
+            <a href="mailto:zacharymuranaka@mail.weber.edu"><img src="images/mailLogo.png" alt="Mail" class="mailLogo"/></a>
+            <a href="https://github.com/zmuranaka" target="_blank"><img src="images/githubLogo.png" alt="GitHub"/></a>
+            <a href="https://weber.joinhandshake.com/users/7194928?ref=students" target="_blank"><img src="images/handshakeLogo.jpg" alt="Handshake"/></a>
+        </div>
+    </footer>
+
+</body>
+
+</html>

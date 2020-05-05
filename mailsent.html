@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!--
+        File: mailsent.html
+        Zachary Muranaka
+        Page that tells the user they successfully emailed me
+     -->
+    <meta charset="utf-8">
+    <title>Mail Sent</title>
+    <script>
+        // Redirects back to the homepage in 2 seconds
+        window.onload = function()
+        {
+            setTimeout(
+            function()
+            {
+                window.location.replace("index.html#contactPage");
+            }, 2000);
+        }
+    </script>
+</head>
+<body>
+    <h1>Mail sent</h1>
+</body>
+</html>
