@@ -11,7 +11,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
     <title>Zachary Muranaka Portfolio</title>
     <link href="styles/portfolio_styles.css" rel="stylesheet">
-    <script src="scripts/dynamicStyles.js" async></script>
+    <script src="scripts/dynamicStyles.js" defer></script>
     <script src="scripts/scroll.js" defer></script>
     <script src="scripts/descriptions.js" defer></script>
 </head>
@@ -24,9 +24,9 @@
             <img src="images/whiteBurgerNav.png" alt="Menu" id="burgerNav">
         </div>
         <nav id="navBar">
-            <div class="navLink">YouTube Validator</div>
-            <div class="navLink">Rock Paper Scissors</div>
             <div class="navLink">Hypergeometric Calculator</div>
+            <div class="navLink">Rock Paper Scissors</div>
+            <div class="navLink">YouTube Validator</div>
             <div class="navLink">Liar's Dice</div>
             <div class="navLink">Contact Me</div>
         </nav>
@@ -39,20 +39,19 @@
 
     <section class="page">
         <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
-        <h2>YouTube Validator</h2>
+        <h2>Hypergeometric Calculator</h2>
         <p class="description">
-            Fully-responsive web application that validates YouTube URLs.
-            Utilizes random character generation from ASCII,
-            Document Object Model traversal, and generating images with an external source.
+            Responsive web application that solves hypergeometric distributions.
+            Utilizes error handling, complex math, and ES6 features like classes.
         </p>
         <div>
-            <video poster="images/validator.png" class="tallVideo" controls muted>
-                <source src="videos/validator.mp4" type="video/mp4">
+            <video poster="images/hypergeom.png" class="tallVideo" controls muted>
+                <source src="videos/hypergeom.mp4" type="video/mp4">
             </video>
         </div>
         <div>
-            <a href="http://icarus.cs.weber.edu/~zm83483/youtube/validator.html" target="_blank" class="button">View Live</a>
-            <a href="https://github.com/zmuranaka/youtube-validator" target="_blank" class="button">View Code</a>
+            <a href="http://icarus.cs.weber.edu/~zm83483/hypergeom/hypergeom.html" target="_blank" class="button">View Live</a>
+            <a href="https://github.com/zmuranaka/hypergeometric-calculator-js" target="_blank" class="button">View Code</a>
         </div>
     </section>
 
@@ -60,9 +59,9 @@
         <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
         <h2>Rock Paper Scissors</h2>
         <p class="description">
-            Fully-responsive web application that allows the user to play rock-paper-scissors and two variations.
-            Utilizes parsing custom user input as integers, time outs for time tracking,
-            and local storage to allow for a fully-functional high scores board.
+            Responsive web application that allows the user to play the classic game of rock-paper-scissors and two variations.
+            Utilizes timeouts for time tracking, parsing custom user input as integers,
+            and local storage for a fully-functional high scores board.
         </p>
         <div>
             <video poster="images/rps.png" class="tallVideo" controls muted>
@@ -77,19 +76,20 @@
 
     <section class="page">
         <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
-        <h2>Hypergeometric Calculator</h2>
+        <h2>YouTube Validator</h2>
         <p class="description">
-            Fully-responsive web application that solves hypergeometric distributions.
-            Utilizes error handling, complex math, and ES6 functionality like classes.
+            Responsive web application that checks if user submitted or randomly generated YouTube URLs exist.
+            Utilizes random character generation from ASCII,
+            Document Object Model traversal, and generating images with an external source.
         </p>
         <div>
-            <video poster="images/hypergeom.png" class="tallVideo" controls muted>
-                <source src="videos/hypergeom.mp4" type="video/mp4">
+            <video poster="images/validator.png" class="tallVideo" controls muted>
+                <source src="videos/validator.mp4" type="video/mp4">
             </video>
         </div>
         <div>
-            <a href="http://icarus.cs.weber.edu/~zm83483/hypergeom/hypergeom.html" target="_blank" class="button">View Live</a>
-            <a href="https://github.com/zmuranaka/hypergeometric-calculator-js" target="_blank" class="button">View Code</a>
+            <a href="http://icarus.cs.weber.edu/~zm83483/youtube/validator.html" target="_blank" class="button">View Live</a>
+            <a href="https://github.com/zmuranaka/youtube-validator" target="_blank" class="button">View Code</a>
         </div>
     </section>
 

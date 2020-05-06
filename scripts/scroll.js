@@ -10,9 +10,9 @@ var topRow = document.getElementById("mobileTopRow");
 var navLinks = document.getElementsByClassName("navLink"); // Array of the nav links
 var downArrows = document.getElementsByClassName("downArrow"); // Array of the down arrows
 var upArrows = document.getElementsByClassName("upArrow"); // Array of the up arrows
-var projectsPosition;
-var rpsPosition;
 var hypergeomPosition;
+var rpsPosition;
+var youtubePosition;
 var liarsDicePosition;
 var contactPosition;
 var positionToScrollTo;
@@ -22,14 +22,15 @@ var scrollTime; // This keeps track of the setTimeout while scrolling
 window.addEventListener("load", setPositions);
 window.addEventListener("resize", setPositions);
 
-// Set the variables that keep track of where objects
+// Sets the variables that keep track of where objects are in the website
 function setPositions()
 {
-    projectsPosition = document.getElementById("landingPage").offsetHeight;
-    rpsPosition = projectsPosition * 2;
-    hypergeomPosition = projectsPosition * 3;
-    liarsDicePosition = projectsPosition * 4;
-    contactPosition = projectsPosition * 5;
+    var onePageHeight = document.getElementById("landingPage").offsetHeight; // The height of one page in the website
+    hypergeomPosition = onePageHeight;
+    rpsPosition = onePageHeight * 2;
+    youtubePosition = onePageHeight * 3;
+    liarsDicePosition = onePageHeight * 4;
+    contactPosition = onePageHeight * 5;
 }
 
 // We stop scrolling if the window changes orientation
@@ -79,11 +80,12 @@ for(let i = 0; i < upArrows.length; i++)
     });
 }
 
+// Determines where we need to scroll based on what was clicked
 function determineScrollPosition(object)
 {
-    if(object === navLinks[0] || object === downArrows[0]) positionToScrollTo = projectsPosition;
+    if(object === navLinks[0] || object === downArrows[0]) positionToScrollTo = hypergeomPosition;
     else if(object === navLinks[1] || object === downArrows[1]) positionToScrollTo = rpsPosition;
-    else if(object === navLinks[2] || object === downArrows[2]) positionToScrollTo = hypergeomPosition;
+    else if(object === navLinks[2] || object === downArrows[2]) positionToScrollTo = youtubePosition;
     else if(object === navLinks[3] || object === downArrows[3]) positionToScrollTo = liarsDicePosition;
     else if(object === navLinks[4] || object === downArrows[4]) positionToScrollTo = contactPosition;
 }
@@ -91,7 +93,6 @@ function determineScrollPosition(object)
 // Recursive function that does a smooth scroll
 function smoothScroll(direction)
 {
-    // We scroll again if we are not within 54 pixels of the destination
     if(weNeedToScrollAgain())
     {
         // The setTimeout creates the smooth scroll effect
@@ -120,4 +121,5 @@ function weNeedToScrollAgain()
     (window.pageYOffset < positionToScrollTo - 6 || window.pageYOffset > positionToScrollTo) && !weAreAtTheTop();
 }
 
+// Returns whether we are at the top of the page or not (true means we are)
 function weAreAtTheTop() { return positionToScrollTo === 0 && window.pageYOffset === 0; }

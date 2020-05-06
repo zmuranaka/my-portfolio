@@ -29,6 +29,8 @@ body {
     background: linear-gradient(rgb(0, 0, 204), midnightblue);
 }
 
+/* Nav styles */
+
 #burgerNav {
     position: fixed;
     z-index: 1;
@@ -38,8 +40,6 @@ body {
 }
 
 #navBar { display: none }
-
-/* Nav Link styles */
 
 .navLink {
     position: fixed;
@@ -60,7 +60,7 @@ body {
 
 .navLink:active { background: yellow }
 
-/* Landing Page styles */
+/* Landing page styles */
 
 #landingPage a, footer a {
     display: inline-block;
@@ -83,9 +83,9 @@ span {
     font-style: italic;
 }
 
-#landingPage .downArrow { top: calc(85vh + 48px) } /* Account for 48px mobile navbar */
-
 /* Arrow styles */
+
+#landingPage .downArrow { top: calc(85vh + 48px) } /* Account for 48px mobile navbar */
 
 .downArrow, .upArrow {
     display: none;

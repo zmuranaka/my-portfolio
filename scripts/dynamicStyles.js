@@ -35,7 +35,7 @@ burgerNav.addEventListener("mousedown", function() { this.style.background = "ye
 burgerNav.addEventListener("mouseup", function() { this.style.background = "rgb(216, 216, 255)"; });
 burgerNav.addEventListener("click", burgerNavClicked);
 
-// Check if we need to change the dynamic styles
+// Changes the dynamic styles if the viewport's aspect ratio has changed to below or above 4/3
 function changeStyles()
 {
     if(window.innerWidth / window.innerHeight >= 4/3)
@@ -89,7 +89,6 @@ function changeStyles()
 
         menuIsOpen = false;
     }
-
     else
     {
         navLinks[0].style.top = "3em";
