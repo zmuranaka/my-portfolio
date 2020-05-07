@@ -45,6 +45,7 @@ function changeStyles()
         navLinks[2].style.top = "4em";
         navLinks[3].style.top = "6em";
         navLinks[4].style.top = "8em";
+        navLinks[5].style.top = "10em";
 
         dynamicStyles.innerHTML =
         "\

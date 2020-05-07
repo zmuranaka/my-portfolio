@@ -11,7 +11,7 @@ images
 scripts  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains the JavaScript scripts that handle everything from how elements are displayed to how the smooth scroll functions. It also contains the PHP that allows the email contact form to work.  
 styles  
-&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the stylesheet for the website.
+&nbsp;&nbsp;&nbsp;&nbsp;This folder contains the stylesheet for the website.  
 videos  
 &nbsp;&nbsp;&nbsp;&nbsp;This folder contains the videos showcasing my projects.
 

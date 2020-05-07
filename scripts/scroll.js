@@ -15,6 +15,7 @@ var rpsPosition;
 var youtubePosition;
 var liarsDicePosition;
 var contactPosition;
+var aboutMePosition;
 var positionToScrollTo;
 var scrollTime; // This keeps track of the setTimeout while scrolling
 
@@ -30,7 +31,8 @@ function setPositions()
     rpsPosition = onePageHeight * 2;
     youtubePosition = onePageHeight * 3;
     liarsDicePosition = onePageHeight * 4;
-    contactPosition = onePageHeight * 5;
+    aboutMePosition = onePageHeight * 5;
+    contactPosition = onePageHeight * 6;
 }
 
 // We stop scrolling if the window changes orientation
@@ -87,7 +89,8 @@ function determineScrollPosition(object)
     else if(object === navLinks[1] || object === downArrows[1]) positionToScrollTo = rpsPosition;
     else if(object === navLinks[2] || object === downArrows[2]) positionToScrollTo = youtubePosition;
     else if(object === navLinks[3] || object === downArrows[3]) positionToScrollTo = liarsDicePosition;
-    else if(object === navLinks[4] || object === downArrows[4]) positionToScrollTo = contactPosition;
+    else if(object === navLinks[4] || object === downArrows[4]) positionToScrollTo = aboutMePosition;
+    else if(object === navLinks[5] || object === downArrows[5]) positionToScrollTo = contactPosition;
 }
 
 // Recursive function that does a smooth scroll
