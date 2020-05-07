@@ -153,7 +153,7 @@ textarea { font-size: 2vh }
     font-size: 8vh;
 }
 
-#sendBtn, .button { background: linear-gradient(to top, rgb(0, 0, 204), rgb(80, 80, 204)); }
+#sendBtn, .button { background: linear-gradient(to top, rgb(0, 0, 204), rgb(80, 80, 204)) }
 
 #sendBtn:hover, .button:hover { background: linear-gradient(to top, rgb(0, 175, 255), rgb(0, 255, 255)) }
 

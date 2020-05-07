@@ -97,6 +97,7 @@ function changeStyles()
         navLinks[2].style.top = "7em";
         navLinks[3].style.top = "9em";
         navLinks[4].style.top = "11em";
+        navLinks[5].style.top = "13em";
         dynamicStyles.innerHTML = "";
     }
 }
