@@ -4,6 +4,8 @@ Zachary Muranaka
 Styles for my portfolio
 */
 
+/* Structural styles */
+
 body {
     width: 100%;
     min-width: 320px; /* Narrowest screen in common use */
@@ -13,25 +15,9 @@ body {
     word-wrap: break-word; /* Makes sure text never overflows the screen */
 }
 
-/* Section styles */
-
 section {
     position: relative;
     height: 100vh; /* vh means viewport height */
-}
-
-section h2 {
-    width: 95%;
-    margin: 0 auto;
-    color: rgb(20, 20, 20);
-    font-size: 5vh;
-}
-
-section video {
-    display: none;
-    width: auto;
-    height: 50vh;
-    border: 1px solid black;
 }
 
 header {
@@ -40,6 +26,27 @@ header {
     width: 100%;
     height: 48px;
     background: linear-gradient(rgb(0, 0, 204), midnightblue);
+}
+
+h1 {
+    margin: 0;
+    padding: 30vh 0 0 0;
+    font-size: 10vh;
+    font-weight: normal;
+}
+
+h2 {
+    width: 95%;
+    margin: 0 auto;
+    color: rgb(20, 20, 20);
+    font-size: 5vh;
+}
+
+video {
+    display: none;
+    width: auto;
+    height: 50vh;
+    border: 1px solid black;
 }
 
 /* Nav styles */
@@ -73,8 +80,6 @@ nav { display: none }
 
 .navLink:active { background: yellow }
 
-/* Landing page styles */
-
 #landingPage a, footer a {
     display: inline-block;
     margin: 1em 0 0 1em;
@@ -82,26 +87,32 @@ nav { display: none }
     text-decoration: none;
 }
 
-#landingPage p {
-    margin: 0;
-    padding: 30vh 0 0 0;
-    font-size: 10vh;
+p a {
+    color: rgb(0, 0, 204);
+    text-decoration: none;
 }
 
-/* Span and description styles */
+p a:hover {
+    color: rgb(0, 255, 255);
+    text-decoration: underline;
+}
 
-span, .description {
+p a:active {
+    color: yellow;
+}
+
+/* Paragraph styles */
+
+p {
     width: 95%;
     padding: 0;
     color: rgb(40, 40, 40);
-    font-style: italic;
+    margin: 2vh auto;
 }
 
-span {
-    display: block;
-    margin: 2vh auto;
-    font-size: 2vh;
-}
+.info, .description { font-style: italic }
+
+.info { font-size: 2vh }
 
 .description {
     display: none;
@@ -131,7 +142,7 @@ span {
     font-size: 3vh;
 }
 
-input[type='text'] {
+input[type=text] {
     width: 100%;
     margin: 1vh 0 2vh 0;
     padding: 2px 0;
@@ -200,5 +211,3 @@ footer {
 
 @media screen and (min-aspect-ratio: 18/25) and (min-height: 1000px),
        screen and (min-aspect-ratio: 4/3) and (min-height: 368px) { .downArrow, .upArrow { display: inline } }
-
-@media screen and (min-aspect-ratio: 4/3) and (min-height: 600px) { .description { width: 55% } }

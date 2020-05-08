@@ -10,12 +10,12 @@ var mobileNav = document.getElementById("burgerNav");
 var navLinks = document.getElementsByClassName("navLink"); // Array of the nav links
 var downArrows = document.getElementsByClassName("downArrow"); // Array of the down arrows
 var upArrows = document.getElementsByClassName("upArrow"); // Array of the up arrows
+var aboutMePosition;
 var hypergeomPosition;
 var rpsPosition;
 var youtubePosition;
 var liarsDicePosition;
 var contactPosition;
-var aboutMePosition;
 var positionToScrollTo;
 var scrollTime; // This keeps track of the setTimeout while scrolling
 
@@ -27,11 +27,11 @@ window.addEventListener("resize", setPositions);
 function setPositions()
 {
     var onePageHeight = document.getElementById("landingPage").offsetHeight; // The height of one page in the website
-    hypergeomPosition = onePageHeight;
-    rpsPosition = onePageHeight * 2;
-    youtubePosition = onePageHeight * 3;
-    liarsDicePosition = onePageHeight * 4;
-    aboutMePosition = onePageHeight * 5;
+    aboutMePosition = onePageHeight;
+    hypergeomPosition = onePageHeight * 2;
+    rpsPosition = onePageHeight * 3;
+    youtubePosition = onePageHeight * 4;
+    liarsDicePosition = onePageHeight * 5;
     contactPosition = onePageHeight * 6;
 }
 
@@ -85,11 +85,11 @@ for(let i = 0; i < upArrows.length; i++)
 // Determines where we need to scroll based on what was clicked
 function determineScrollPosition(object)
 {
-    if(object === navLinks[0] || object === downArrows[0]) positionToScrollTo = hypergeomPosition;
-    else if(object === navLinks[1] || object === downArrows[1]) positionToScrollTo = rpsPosition;
-    else if(object === navLinks[2] || object === downArrows[2]) positionToScrollTo = youtubePosition;
-    else if(object === navLinks[3] || object === downArrows[3]) positionToScrollTo = liarsDicePosition;
-    else if(object === navLinks[4] || object === downArrows[4]) positionToScrollTo = aboutMePosition;
+    if(object === navLinks[0] || object === downArrows[0]) positionToScrollTo = aboutMePosition;
+    else if(object === navLinks[1] || object === downArrows[1]) positionToScrollTo = hypergeomPosition;
+    else if(object === navLinks[2] || object === downArrows[2]) positionToScrollTo = rpsPosition;
+    else if(object === navLinks[3] || object === downArrows[3]) positionToScrollTo = youtubePosition;
+    else if(object === navLinks[4] || object === downArrows[4]) positionToScrollTo = liarsDicePosition;
     else if(object === navLinks[5] || object === downArrows[5]) positionToScrollTo = contactPosition;
 }
 

@@ -6,7 +6,8 @@ Zachary Muranaka
 Allows the styles to change depending on the viewport
 */
 
-var dynamicStyles = document.createElement("style"); // A dynamic CSS stylesheet
+// Create and append a dynamic CSS stylesheet to the document head
+var dynamicStyles = document.createElement("style");
 document.head.appendChild(dynamicStyles);
 
 var burgerNav = document.getElementById("burgerNav");
@@ -47,6 +48,7 @@ function changeStyles()
         navLinks[4].style.top = "8em";
         navLinks[5].style.top = "10em";
 
+        // Write new CSS styles
         dynamicStyles.innerHTML =
         "\
         .navLink {\
@@ -68,16 +70,13 @@ function changeStyles()
         }\
         header { display: none }\
         nav { display: block }\
-        span {\
-            width: 55%;\
-            margin: 4vh auto;\
-        }\
+        p { width: 55% }\
         #landingPage .downArrow { top: 85vh }\
-        section h2 { font-size: 6vh; }\
+        h2 { font-size: 6vh; }\
         .formRow, textarea { width: 55% }\
         label { width: 15% }\
         .formRow{ display: flex }\
-        input[type='text'] {\
+        input[type=text] {\
             width: 80%;\
             margin-left: 5%;\
             text-align: left;\

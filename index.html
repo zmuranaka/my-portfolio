@@ -9,7 +9,7 @@
      -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
-    <title>Zachary Muranaka Portfolio</title>
+    <title>My Portfolio</title>
     <link href="styles/portfolio_styles.css" rel="stylesheet">
     <script src="scripts/dynamicStyles.js" defer></script>
     <script src="scripts/scroll.js" defer></script>
@@ -24,18 +24,40 @@
             <img src="images/whiteBurgerNav.png" alt="Menu" id="burgerNav">
         </header>
         <nav>
+            <div class="navLink">About Me</div>
             <div class="navLink">Hypergeometric Calculator</div>
             <div class="navLink">Rock Paper Scissors</div>
             <div class="navLink">YouTube Validator</div>
             <div class="navLink">Liar's Dice</div>
-            <div class="navLink">About Me</div>
             <div class="navLink">Contact Me</div>
         </nav>
-        <p>Zachary Muranaka</p>
-        <span>A showcase of my projects and abilities</span>
+        <h1>Zachary Muranaka</h1>
+        <p class="info">
+            Welcome to my portfolio!
+            Scroll down to learn more about me, view my projects, or send me an email.
+        </p>
         <a href="mailto:zacharymuranaka@mail.weber.edu"><img src="images/mailLogo.png" alt="Mail" class="mailLogo"/></a>
         <a href="https://github.com/zmuranaka" target="_blank"><img src="images/githubLogo.png" alt="GitHub"/></a>
         <a href="https://weber.joinhandshake.com/users/7194928?ref=students" target="_blank"><img src="images/handshakeLogo.jpg" alt="Handshake"/></a>
+    </section>
+    
+    <section>
+        <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
+        <h2>About Me</h2>
+        <p>
+            Hi! My name is Zachary Muranaka and I'm a computer science student and member of the
+            <a href="https://weber.edu/aletheia" target="_blank">Aletheia</a>
+            club at Weber State University.
+            I love to code and am proficient with several programming languages like HTML, CSS, JavaScript, C++, Java, and SQL.
+            I know a bit of Python, PHP, Linux Terminal, Windows Command Prompt, and Git as well.
+            When I'm not working on schoolwork, you can probably find me helping my sister with some of her math
+            or working on a new coding project.
+        </p>
+        <p>
+            A few of my projects are listed below, all of which I built with HTML, CSS, and JavaScript,
+            except for Liar's Dice, which I built with Java. A full list of my projects and code can be found on my
+            <a href="https://github.com/zmuranaka" target="_blank">GitHub</a>.
+        </p>
     </section>
 
     <section>
@@ -112,20 +134,12 @@
         </div>
     </section>
 
-    <section>
-        <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
-        <h2>About Me</h2>
-        <p>
-            Driven computer science student proficient in various programming languages.
-        </p>
-    </section>
-
     <section id="contactPage">
         <img src="images/blackUpArrow.png" class="upArrow" alt="Back to Top"/>
         <h2>Contact Me</h2>
-        <span>
+        <p class="info">
             Use this form to send me an email and I'll get back to you as soon as possible.
-        </span>
+        </p>
         <form method="post" action="scripts/sendEmail.php">
             <div class="formRow">
                 <label for="username">Name</label>
