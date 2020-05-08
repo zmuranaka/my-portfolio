@@ -6,7 +6,7 @@ Zachary Muranaka
 Handles the scrolling in my portfolio
 */
 
-var topRow = document.getElementById("mobileTopRow");
+var mobileNav = document.getElementById("burgerNav");
 var navLinks = document.getElementsByClassName("navLink"); // Array of the nav links
 var downArrows = document.getElementsByClassName("downArrow"); // Array of the down arrows
 var upArrows = document.getElementsByClassName("upArrow"); // Array of the up arrows
@@ -111,7 +111,7 @@ function smoothScroll(direction)
 // Returns whether we need to scroll up or down (true means down)
 function upOrDown()
 {
-    return topRow.offsetHeight?
+    return mobileNav.offsetHeight?
     window.pageYOffset < positionToScrollTo - 48 :
     window.pageYOffset < positionToScrollTo;
 }
@@ -119,7 +119,7 @@ function upOrDown()
 // Returns whether we need to scroll again or not (true means we do)
 function weNeedToScrollAgain()
 {
-    return topRow.offsetHeight?
+    return mobileNav.offsetHeight?
     (window.pageYOffset < positionToScrollTo - 54 || window.pageYOffset > positionToScrollTo - 48) && !weAreAtTheTop() :
     (window.pageYOffset < positionToScrollTo - 6 || window.pageYOffset > positionToScrollTo) && !weAreAtTheTop();
 }

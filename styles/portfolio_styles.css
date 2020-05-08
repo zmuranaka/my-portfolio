@@ -4,8 +4,6 @@ Zachary Muranaka
 Styles for my portfolio
 */
 
-html { background: linear-gradient(to top, rgb(210, 210, 255), white) }
-
 body {
     width: 100%;
     min-width: 320px; /* Narrowest screen in common use */
@@ -15,13 +13,28 @@ body {
     word-wrap: break-word; /* Makes sure text never overflows the screen */
 }
 
-.page {
+/* Section styles */
+
+section {
     position: relative;
-    width: 100%;
     height: 100vh; /* vh means viewport height */
 }
 
-#mobileTopRow {
+section h2 {
+    width: 95%;
+    margin: 0 auto;
+    color: rgb(20, 20, 20);
+    font-size: 5vh;
+}
+
+section video {
+    display: none;
+    width: auto;
+    height: 50vh;
+    border: 1px solid black;
+}
+
+header {
     position: fixed;
     z-index: 1;
     width: 100%;
@@ -39,7 +52,7 @@ body {
     cursor: pointer;
 }
 
-#navBar { display: none }
+nav { display: none }
 
 .navLink {
     position: fixed;
@@ -75,12 +88,24 @@ body {
     font-size: 10vh;
 }
 
+/* Span and description styles */
+
+span, .description {
+    width: 95%;
+    padding: 0;
+    color: rgb(40, 40, 40);
+    font-style: italic;
+}
+
 span {
     display: block;
-    width: 95%;
     margin: 2vh auto;
     font-size: 2vh;
-    font-style: italic;
+}
+
+.description {
+    display: none;
+    margin: 1vh auto;
 }
 
 /* Arrow styles */
@@ -96,29 +121,6 @@ span {
     margin: 0 auto;
     padding: 0;
     cursor: pointer;
-}
-
-/* Section styles */
-
-section h2 {
-    width: 95%;
-    margin: 0 auto;
-    font-size: 5vh;
-}
-
-.description {
-    display: none;
-    width: 95%;
-    margin: 1vh auto;
-    padding: 0;
-    font-style: italic;
-}
-
-section video {
-    display: none;
-    width: auto;
-    height: 50vh;
-    border: 1px solid black;
 }
 
 /* Form styles */
@@ -140,7 +142,7 @@ input[type='text'] {
     font-size: 2.5vh;
 }
 
-input:focus{ background: white }
+input:focus{ background: rgb(240, 240, 255) }
 
 textarea { font-size: 2vh }
 

@@ -66,8 +66,8 @@ function changeStyles()
             background: none;\
             color: yellow;\
         }\
-        #mobileTopRow { display: none }\
-        #navBar { display: block }\
+        header { display: none }\
+        nav { display: block }\
         span {\
             width: 55%;\
             margin: 4vh auto;\
@@ -111,12 +111,12 @@ function burgerNavClicked()
 
 function closeNavMenu()
 {
-    dynamicStyles.innerHTML = "#navBar { display: none }";
+    dynamicStyles.innerHTML = "nav { display: none }";
     menuIsOpen = false; // The menu is now closed
 }
 
 function openNavMenu()
 {
-    dynamicStyles.innerHTML = "#navBar { display: block }";
+    dynamicStyles.innerHTML = "nav { display: block }";
     menuIsOpen = true; // The menus is now open
 }
