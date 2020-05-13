@@ -108,11 +108,12 @@ p {
     padding: 0;
     color: rgb(40, 40, 40);
     margin: 2vh auto;
+    font-size: 2.7vh;
 }
 
 .info, .description { font-style: italic }
 
-.info { font-size: 2vh }
+.info { font-size: 2.1vh }
 
 .description {
     display: none;
@@ -153,7 +154,10 @@ input[type=text] {
     font-size: 2.5vh;
 }
 
-input:focus{ background: rgb(240, 240, 255) }
+input:focus, textarea:focus {
+    background: rgb(240, 255, 255);
+    border: 1px solid blue;
+}
 
 textarea { font-size: 2vh }
 
@@ -189,7 +193,7 @@ textarea { font-size: 2vh }
     align-items: center;
     justify-content: center;
     text-decoration: none;
-    font-size: 1.5em;
+    font-size: 3.5vh;
 }
 
 /* Footer styles */
@@ -211,3 +215,11 @@ footer {
 
 @media screen and (min-aspect-ratio: 18/25) and (min-height: 1000px),
        screen and (min-aspect-ratio: 4/3) and (min-height: 368px) { .downArrow, .upArrow { display: inline } }
+
+@media screen and (min-aspect-ratio: 7/4) {
+    
+    p { font-size: 3.5vh }
+    
+    .info { font-size: 3vh }
+
+}
