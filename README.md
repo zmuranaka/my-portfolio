@@ -22,6 +22,8 @@ I got the GitHub logo from [GitHub](https://github.com/logos), I got the Handsha
 Websites that helped me create the project:  
 https://www.youtube.com/watch?v=4q0gYjAVonI  
 &nbsp;&nbsp;&nbsp;&nbsp;This YouTube video taught me how to create a functional email contact form with PHP.  
+https://www.bitdegree.org/learn/php-filtering  
+&nbsp;&nbsp;&nbsp;&nbsp;This website taught me how to filter form input with PHP.  
 https://css-tricks.com/  
 &nbsp;&nbsp;&nbsp;&nbsp;This website was very helpful for anything CSS-related, whether checking syntax or learning something new.  
 https://www.w3schools.com/  
