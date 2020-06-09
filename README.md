@@ -19,9 +19,11 @@ videos
 
 I got the GitHub logo from [GitHub](https://github.com/logos), I got the Handshake logo from
 [Handshake](https://weber.joinhandshake.com), and I created the arrow images, burger nav icons, and mail logo in Adobe Photoshop.  
-Websites that helped me create the project:  
+Sources that helped me create the project:  
+https://www.oreilly.com/library/view/learning-php-mysql/9781491918654/  
+&nbsp;&nbsp;&nbsp;&nbsp;Learning PHP, MySQL & JavaScript, 4th Edition by Robin Nixon taught me a lot about PHP and form validation.  
 https://www.youtube.com/watch?v=4q0gYjAVonI  
-&nbsp;&nbsp;&nbsp;&nbsp;This YouTube video taught me how to create a functional email contact form with PHP.  
+&nbsp;&nbsp;&nbsp;&nbsp;This YouTube video first taught me how to create a functional email contact form with PHP.  
 https://www.bitdegree.org/learn/php-filtering  
 &nbsp;&nbsp;&nbsp;&nbsp;This website taught me how to filter form input with PHP.  
 https://css-tricks.com/  

@@ -111,7 +111,7 @@ function smoothScroll(direction)
 // Returns whether we need to scroll up or down (true means down)
 function upOrDown()
 {
-    return mobileNav.offsetHeight?
+    return mobileNav.offsetHeight ?
     window.pageYOffset < positionToScrollTo - 48 :
     window.pageYOffset < positionToScrollTo;
 }
@@ -119,7 +119,7 @@ function upOrDown()
 // Returns whether we need to scroll again or not (true means we do)
 function weNeedToScrollAgain()
 {
-    return mobileNav.offsetHeight?
+    return mobileNav.offsetHeight ?
     (window.pageYOffset < positionToScrollTo - 54 || window.pageYOffset > positionToScrollTo - 48) && !weAreAtTheTop() :
     (window.pageYOffset < positionToScrollTo - 6 || window.pageYOffset > positionToScrollTo) && !weAreAtTheTop();
 }
