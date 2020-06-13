@@ -7,7 +7,7 @@ Allows the nav styles to change depending on the viewport
 */
 
 var burgerNav = O("burgerNav");
-var navLinks = document.getElementsByClassName("navLink"); // Array of the nav links
+var navLinks = C("navLink"); // Array of the nav links
 var menuIsOpen = false; // Boolean value that keeps track of whether the menu is open or not
 
 // When we load, resize, or change orientation we may have to change the display of the nav links

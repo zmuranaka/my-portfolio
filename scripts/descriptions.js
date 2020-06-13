@@ -6,8 +6,8 @@ Zachary Muranaka
 Handles how the descriptions display depending on the viewport
 */
 
-var videos = document.getElementsByTagName("video"); // Array of the videos
-var descriptions = document.getElementsByClassName("description"); // Array of the descriptions
+var videos = T("video"); // Array of the videos
+var descriptions = C("description"); // Array of the descriptions
 
 // Add event listners to the window
 wEvent("load", checkDescriptions);

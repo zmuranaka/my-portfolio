@@ -6,9 +6,9 @@ Zachary Muranaka
 Handles the scrolling in my portfolio
 */
 
-var navLinks = document.getElementsByClassName("navLink"); // Array of the nav links
-var downArrows = document.getElementsByClassName("downArrow"); // Array of the down arrows
-var upArrows = document.getElementsByClassName("upArrow"); // Array of the up arrows
+var navLinks = C("navLink"); // Array of the nav links
+var downArrows = C("downArrow"); // Array of the down arrows
+var upArrows = C("upArrow"); // Array of the up arrows
 var aboutMePosition;
 var hypergeomPosition;
 var rpsPosition;
