@@ -21,13 +21,13 @@ I got the GitHub logo from [GitHub](https://github.com/logos), I got the Handsha
 [Handshake](https://weber.joinhandshake.com), and I created the arrow images, burger nav icons, and mail logo in Adobe Photoshop.  
 Sources that helped me create the project:  
 https://www.oreilly.com/library/view/learning-php-mysql/9781491918654/  
-&nbsp;&nbsp;&nbsp;&nbsp;Learning PHP, MySQL & JavaScript, 4th Edition by Robin Nixon taught me a lot about PHP and form validation.  
+&nbsp;&nbsp;&nbsp;&nbsp;Learning PHP, MySQL & JavaScript, 4th Edition by Robin Nixon taught me a lot about PHP, form validation, and JavaScript.  
 https://www.youtube.com/watch?v=4q0gYjAVonI  
 &nbsp;&nbsp;&nbsp;&nbsp;This YouTube video first taught me how to create a functional email contact form with PHP.  
 https://www.bitdegree.org/learn/php-filtering  
 &nbsp;&nbsp;&nbsp;&nbsp;This website taught me how to filter form input with PHP.  
-https://css-tricks.com/  
-&nbsp;&nbsp;&nbsp;&nbsp;This website was very helpful for anything CSS-related, whether checking syntax or learning something new.  
+https://css-tricks.com/snippets/css/keyframe-animation-syntax/  
+&nbsp;&nbsp;&nbsp;&nbsp;CSS-Tricks was very helpful for anything CSS-related, whether checking syntax or learning something new. For example, the webpage I linked taught me how keyframes work in CSS.  
 https://www.w3schools.com/  
 &nbsp;&nbsp;&nbsp;&nbsp;W3Schools was very helpful when I was checking that my syntax was correct and as a general reference.
 

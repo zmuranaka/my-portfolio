@@ -133,6 +133,18 @@ p {
     cursor: pointer;
 }
 
+/* Defines an animation that moves an element up by 1.25vh and then back to its original position */
+@keyframes hop {
+
+    0%, 100% { transform: translateY(0) }
+    
+    50% { transform: translateY(-1.25vh) }
+
+}
+
+/* As long as the arrows are being hovered over, they perform the hop animation every 1 second */
+.downArrow:hover, .upArrow:hover { animation: hop 1s infinite }
+
 /* Form styles */
 
 .formRow, textarea {

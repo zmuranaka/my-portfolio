@@ -6,7 +6,6 @@ Zachary Muranaka
 Handles the scrolling in my portfolio
 */
 
-var mobileNav = document.getElementById("burgerNav");
 var navLinks = document.getElementsByClassName("navLink"); // Array of the nav links
 var downArrows = document.getElementsByClassName("downArrow"); // Array of the down arrows
 var upArrows = document.getElementsByClassName("upArrow"); // Array of the up arrows
@@ -20,13 +19,13 @@ var positionToScrollTo;
 var scrollTime; // This keeps track of the setTimeout while scrolling
 
 // When we load or resize the window we have to set the positions
-window.addEventListener("load", setPositions);
-window.addEventListener("resize", setPositions);
+wEvent("load", setPositions);
+wEvent("resize", setPositions);
 
 // Sets the variables that keep track of where objects are in the website
 function setPositions()
 {
-    var onePageHeight = document.getElementById("landingPage").offsetHeight; // The height of one page in the website
+    var onePageHeight = O("landingPage").offsetHeight; // The height of one page in the website
     aboutMePosition = onePageHeight;
     hypergeomPosition = onePageHeight * 2;
     rpsPosition = onePageHeight * 3;
@@ -36,7 +35,7 @@ function setPositions()
 }
 
 // We stop scrolling if the window changes orientation
-window.addEventListener("orientationchange", function() { clearTimeout(scrollTime); });
+wEvent("orientationchange", function() { clearTimeout(scrollTime); });
 
 // Add event listeners to the nav links
 for(let i = 0; i < navLinks.length; i++)
@@ -111,7 +110,7 @@ function smoothScroll(direction)
 // Returns whether we need to scroll up or down (true means down)
 function upOrDown()
 {
-    return mobileNav.offsetHeight ?
+    return O("burgerNav").offsetHeight ?
     window.pageYOffset < positionToScrollTo - 48 :
     window.pageYOffset < positionToScrollTo;
 }
@@ -119,7 +118,7 @@ function upOrDown()
 // Returns whether we need to scroll again or not (true means we do)
 function weNeedToScrollAgain()
 {
-    return mobileNav.offsetHeight ?
+    return O("burgerNav").offsetHeight ?
     (window.pageYOffset < positionToScrollTo - 54 || window.pageYOffset > positionToScrollTo - 48) && !weAreAtTheTop() :
     (window.pageYOffset < positionToScrollTo - 6 || window.pageYOffset > positionToScrollTo) && !weAreAtTheTop();
 }
