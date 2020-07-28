@@ -27,9 +27,9 @@
         </header>
         <nav id="pageNav">
             <div class="navLink">About Me</div>
+            <div class="navLink">My Blog</div>
             <div class="navLink">Hypergeometric Calculator</div>
-            <div class="navLink">Rock Paper Scissors</div>
-            <div class="navLink">YouTube Validator</div>
+            <div class="navLink">Hack Game</div>
             <div class="navLink">Liar's Dice</div>
             <div class="navLink">Contact Me</div>
         </nav>
@@ -47,17 +47,16 @@
         <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
         <h2>About Me</h2>
         <p>
-            Hi! My name is Zachary Muranaka and I'm a computer science student and member of the
+            Hi, my name is Zachary Muranaka and I'm a computer science student and member of the
             <a href="https://weber.edu/aletheia">Aletheia</a>
             club at Weber State University.
-            I love to code and am proficient with several programming languages like HTML, CSS, JavaScript, C++, Java, and SQL.
-            I know some Python, PHP, Linux Terminal, Windows Command Prompt, and Git as well.
-            When I'm not working on schoolwork, you can probably find me helping my sister with some of her math
-            homework or working on a new coding project.
+            I love to code and am proficient with the languages HTML, CSS, JavaScript, PHP, C++, Java, Python, and SQL.
+            I am also proficient with the command-line utilities Windows Command Prompt and Linux Bash Shell,
+            as well as the version-control system Git.
+            When I'm not working on schoolwork, you can probably find me reading or working on a new coding project.
         </p>
         <p>
-            A few of my projects are showcased below, all of which I built with HTML, CSS, and JavaScript,
-            except for Liar's Dice, which I built with Java. A full list of my projects and code can be found on my
+            A few of my projects are showcased below. A full list of my projects and code can be found on my
             <a href="https://github.com/zmuranaka">GitHub</a>, including the code for this portfolio, which can be found
             <a href="https://github.com/zmuranaka/my-portfolio">here</a>.
         </p>
@@ -65,10 +64,29 @@
 
     <section>
         <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
+        <h2>My Blog</h2>
+        <p class="description">
+            Personal blog I created to post my thoughts and what I am currently learning or reading.
+            I built this mainly with PHP, which dynamically creates HTML files and links them to the main page.
+        </p>
+        <div>
+            <video poster="images/blog.jpg" class="tallVideo" controls>
+                <source src="videos/blog.mp4" type="video/mp4">
+            </video>
+        </div>
+        <div>
+            <a href="https://icarus.cs.weber.edu/~zm83483/blog/" class="button">View Live</a>
+            <a href="https://github.com/zmuranaka/my-blog" class="button">View Code</a>
+        </div>
+    </section>
+
+    <section>
+        <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
         <h2>Hypergeometric Calculator</h2>
         <p class="description">
-            Responsive web application that solves hypergeometric distributions.
-            Utilizes error handling, complex math, and ES6 features like classes.
+            Responsive web application that solves hypergeometric distributions,
+            which describe the probability to get a number of desired successes out of a number of draws from a population without replacement.
+            I built this mainly with JavaScript, which performs the calculations and writes them to the HTML.
         </p>
         <div>
             <video poster="images/hypergeom.jpg" class="tallVideo" controls>
@@ -83,39 +101,19 @@
 
     <section>
         <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
-        <h2>Rock Paper Scissors</h2>
+        <h2>Hack Game</h2>
         <p class="description">
-            Responsive web application that allows the user to play the classic game of rock-paper-scissors and two variations.
-            Utilizes timeouts for time tracking, parsing custom user input as integers,
-            and local storage for a fully-functional high scores board.
+            If you've ever seen a movie or TV show that portrays a "hacker", they were probably furiously typing cryptic green text into a black terminal.
+            This is a simple game to simulate that experience, by turning almost any key the user types into a line of green "hacker code".
+            I built this with Python and the framework Pygame Zero.
         </p>
         <div>
-            <video poster="images/rps.jpg" class="tallVideo" controls>
-                <source src="videos/rps.mp4" type="video/mp4">
+            <video poster="images/hackgame.jpg" class="wideVideo" controls>
+                <source src="videos/hackgame.mp4" type="video/mp4">
             </video>
         </div>
         <div>
-            <a href="http://icarus.cs.weber.edu/~zm83483/rps/rps_classic.html" class="button">View Live</a>
-            <a href="https://github.com/zmuranaka/rps" class="button">View Code</a>
-        </div>
-    </section>
-
-    <section>
-        <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
-        <h2>YouTube Validator</h2>
-        <p class="description">
-            Responsive web application that checks if user-submitted or randomly-generated YouTube URLs lead to a real video or not.
-            Utilizes random character generation from ASCII,
-            Document Object Model traversal, and generating images with an external source.
-        </p>
-        <div>
-            <video poster="images/validator.jpg" class="tallVideo" controls>
-                <source src="videos/validator.mp4" type="video/mp4">
-            </video>
-        </div>
-        <div>
-            <a href="http://icarus.cs.weber.edu/~zm83483/youtube/validator.html" class="button">View Live</a>
-            <a href="https://github.com/zmuranaka/youtube-validator" class="button">View Code</a>
+            <a href="https://github.com/zmuranaka/hack-game" class="button">View Code</a>
         </div>
     </section>
 
@@ -123,9 +121,8 @@
         <img src="images/blackDownArrow.png" class="downArrow" alt="Continue"/>
         <h2>Liar's Dice</h2>
         <p class="description">
-            Java application that allows the user to play Liar's Dice against three computer-controlled bots.
-            Utilizes complex turn-based gameplay, Object-Oriented Programming fundamentals,
-            and Java Swing for a fully-featured Graphical User Interface.
+            Desktop application that allows the user to play the strategy game Liar's Dice against three computer-controlled opponents.
+            I built this with the Java and the GUI widget toolkits AWT and Swing.
         </p>
         <div>
             <video poster="images/liarsDice.jpg" class="wideVideo" controls>

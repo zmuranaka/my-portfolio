@@ -10,10 +10,10 @@ var navLinks = C("navLink"); // Array of the nav links
 var downArrows = C("downArrow"); // Array of the down arrows
 var upArrows = C("upArrow"); // Array of the up arrows
 var aboutMePosition;
-var hypergeomPosition;
-var rpsPosition;
-var youtubePosition;
-var liarsDicePosition;
+var project1Position;
+var project2Position;
+var project3Position;
+var project4Position;
 var contactPosition;
 var positionToScrollTo;
 var scrollTime; // This keeps track of the setTimeout while scrolling
@@ -27,10 +27,10 @@ function setPositions()
 {
     var onePageHeight = O("landingPage").offsetHeight; // The height of one page in the website
     aboutMePosition = onePageHeight;
-    hypergeomPosition = onePageHeight * 2;
-    rpsPosition = onePageHeight * 3;
-    youtubePosition = onePageHeight * 4;
-    liarsDicePosition = onePageHeight * 5;
+    project1Position = onePageHeight * 2;
+    project2Position = onePageHeight * 3;
+    project3Position = onePageHeight * 4;
+    project4Position = onePageHeight * 5;
     contactPosition = onePageHeight * 6;
 }
 
@@ -85,10 +85,10 @@ for(let i = 0; i < upArrows.length; i++)
 function determineScrollPosition(object)
 {
     if(object === navLinks[0] || object === downArrows[0]) positionToScrollTo = aboutMePosition;
-    else if(object === navLinks[1] || object === downArrows[1]) positionToScrollTo = hypergeomPosition;
-    else if(object === navLinks[2] || object === downArrows[2]) positionToScrollTo = rpsPosition;
-    else if(object === navLinks[3] || object === downArrows[3]) positionToScrollTo = youtubePosition;
-    else if(object === navLinks[4] || object === downArrows[4]) positionToScrollTo = liarsDicePosition;
+    else if(object === navLinks[1] || object === downArrows[1]) positionToScrollTo = project1Position;
+    else if(object === navLinks[2] || object === downArrows[2]) positionToScrollTo = project2Position;
+    else if(object === navLinks[3] || object === downArrows[3]) positionToScrollTo = project3Position;
+    else if(object === navLinks[4] || object === downArrows[4]) positionToScrollTo = project4Position;
     else if(object === navLinks[5] || object === downArrows[5]) positionToScrollTo = contactPosition;
 }
 
