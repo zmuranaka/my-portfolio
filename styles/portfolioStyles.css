@@ -221,15 +221,15 @@ footer {
 
 @media screen and (min-aspect-ratio: 11/25) { .tallVideo { display: inline } }
 
-@media screen and (min-aspect-ratio: 19/25) { .wideVideo { display: inline } }
+@media screen and (min-aspect-ratio: 9/10) { .wideVideo { display: inline } }
 
 @media screen and (min-aspect-ratio: 18/25) and (min-height: 1000px),
-       screen and (min-aspect-ratio: 4/3) and (min-height: 368px) { .downArrow, .upArrow { display: inline } }
+       screen and (min-aspect-ratio: 22/15) and (min-height: 368px) { .downArrow, .upArrow { display: inline } }
 
-/* Much of the layout changes when the aspect ratio is 4/3 or greater */
-@media screen and (min-aspect-ratio: 4/3) {
+/* Much of the layout changes when the aspect ratio is 22/15 or greater */
+@media screen and (min-aspect-ratio: 22/15) {
 
-    /* The burger nav changes to a sidebar nav when the aspect ratio is 4/3 or greater */
+    /* The burger nav changes to a sidebar nav when the aspect ratio is 22/15 or greater */
     .navLink {
         width: auto;
         padding-left: 0.5em;

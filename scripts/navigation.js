@@ -31,10 +31,10 @@ burgerNav.addEventListener("mousedown", function() { S(this).background = "yello
 burgerNav.addEventListener("mouseup", function() { S(this).background = "rgb(216, 216, 255)"; });
 burgerNav.addEventListener("click", burgerNavClicked);
 
-// Changes the nav styles if the viewport's aspect ratio has changed to below or above 4/3
+// Changes the nav styles if the viewport's aspect ratio has changed to below or above 22/15
 function changeStyles()
 {
-    if(window.innerWidth / window.innerHeight >= 4/3)
+    if(window.innerWidth / window.innerHeight >= 22/15)
     {
         for(let i = 0, offset = 0; i < navLinks.length; i++, offset+=2)
             S(navLinks[i]).top = offset + "em";
